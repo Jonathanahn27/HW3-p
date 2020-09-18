@@ -5,6 +5,11 @@ def digit_sum(n):
   else:
     return n%10+digit_sum(n//10)
 
-n = int(input("Enter an int: "))
-s = int(digit_sum(n))
-print(f"sum of digits of {n} is {s}.")
+def run():
+  n = int(input("Enter an int: "))
+  s = int(digit_sum(n))
+  print(f"sum of digits of {n} is {s}.")
+
+if __name__ == "__main__":
+  run()
+
